@@ -40,7 +40,6 @@ public class CSVReader : MonoBehaviour
 
     [SerializeField] public float[] artimiesSpeed;
 
-
     public OrbitList myOrbitList = new OrbitList();
 
     // Start is called before the first frame update
@@ -48,12 +47,12 @@ public class CSVReader : MonoBehaviour
     void Awake()
     {
         ReadCSV();
-        artimiesPositions = new Vector3[12981];
-        artimiesSpeed = new float[12981];
+        artimiesPositions = new Vector3[12978];
+        artimiesSpeed = new float[12978];
 
         //artimiesPositions[0] = new Vector3(0,0,0);
         
-        for (int i=0; i < 12981; i++)
+        for (int i=0; i < 12978; i++)
         {
             artimiesPositions[i] = new Vector3((myOrbitList.orbit[i].Rx)/500, (myOrbitList.orbit[i].Ry)/500, (myOrbitList.orbit[i].Rz)/500);
             artimiesSpeed[i] = Mathf.Sqrt((myOrbitList.orbit[i].Vx * myOrbitList.orbit[i].Vx) + (myOrbitList.orbit[i].Vy * myOrbitList.orbit[i].Vy) + (myOrbitList.orbit[i].Vz * myOrbitList.orbit[i].Vz));
