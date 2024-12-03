@@ -25,8 +25,8 @@ public class ArtemisPathRenderer : MonoBehaviour
         colors[2] = new GradientColorKey(Color.blue, 0.70f);
 */
         var colors = new GradientColorKey[3];
-        colors[0] = new GradientColorKey(Color.green, 0.20f);
-        colors[1] = new GradientColorKey(Color.red, 0.615f);
+        colors[0] = new GradientColorKey(Color.green, 0.24f);
+        colors[1] = new GradientColorKey(Color.red, 0.61f);
         colors[2] = new GradientColorKey(Color.blue, 1.0f);
 
         //Blend alpha from opaque at 0% to transparent at 100%
